@@ -1,8 +1,8 @@
-package rml.service;
+package com.ifzer.mybatis.service;
 
 import java.util.List;
 
-import rml.model.MUser;
+import com.ifzer.mybatis.model.MUser;
 
 public interface MUserServiceI {
 

@@ -1,12 +1,12 @@
-package rml.service;
+package com.ifzer.mybatis.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import rml.dao.MUserMapper;
-import rml.model.MUser;
+import com.ifzer.mybatis.dao.MUserMapper;
+import com.ifzer.mybatis.model.MUser;
 
 @Service("muserService")
 public class MUserServiceImpl implements MUserServiceI{

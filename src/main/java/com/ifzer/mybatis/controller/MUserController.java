@@ -1,4 +1,4 @@
-package rml.controller;
+package com.ifzer.mybatis.controller;
 
 import java.util.List;
 import java.util.UUID;
@@ -9,8 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import rml.model.MUser;
-import rml.service.MUserServiceI;
+import com.ifzer.mybatis.model.MUser;
+import com.ifzer.mybatis.service.MUserServiceI;
 
 @Controller
 @RequestMapping("/muserController")

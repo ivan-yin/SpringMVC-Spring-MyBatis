@@ -1,8 +1,8 @@
-package rml.dao;
+package com.ifzer.mybatis.dao;
 
 import java.util.List;
 
-import rml.model.MUser;
+import com.ifzer.mybatis.model.MUser;
 
 public interface MUserMapper {
     int deleteByPrimaryKey(String id);
@@ -16,6 +16,6 @@ public interface MUserMapper {
     int updateByPrimaryKeySelective(MUser record);
 
     int updateByPrimaryKey(MUser record);
-    
-    List<MUser> getAll();
+
+	List<MUser> getAll();
 }

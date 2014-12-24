@@ -1,4 +1,4 @@
-package rml.model;
+package com.ifzer.mybatis.model;
 
 public class MUser {
     private String id;
