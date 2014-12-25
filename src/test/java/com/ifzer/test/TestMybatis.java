@@ -2,6 +2,7 @@ package com.ifzer.test;
 import java.util.List;
 
 import org.apache.log4j.Logger;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
@@ -28,10 +29,10 @@ public class TestMybatis {
 		this.muserService = muserService;
 	}
 
-//	@Test
+	@Test
 	public void test1() {
 
-		List<MUser> list = muserService.getAll();
+		List<MUser> list = muserService.listAll();
 		logger.info(JSON.toJSONStringWithDateFormat(list, "yyyy-MM-dd HH:mm:ss"));
 	}
 
