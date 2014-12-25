@@ -140,7 +140,8 @@
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
 					<webApp>
-						<contextPath>/test</contextPath>
+						<allowDuplicateFragmentNames>true</allowDuplicateFragmentNames>
+						<contextPath>/mybatis</contextPath>
 					</webApp>
 				</configuration>
 			</plugin>

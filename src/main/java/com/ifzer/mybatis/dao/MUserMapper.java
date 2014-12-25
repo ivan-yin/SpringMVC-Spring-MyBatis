@@ -17,5 +17,5 @@ public interface MUserMapper {
 
     int updateByPrimaryKey(MUser record);
 
-	List<MUser> getAll();
+	List<MUser> listAll();
 }

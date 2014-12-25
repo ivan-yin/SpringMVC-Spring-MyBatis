@@ -26,34 +26,34 @@ public class MUserController {
 	public void setMuserService(MUserServiceI muserService) {
 		this.muserService = muserService;
 	}
-	
+
 	@RequestMapping(value="/listUser")
 	public String listUser(HttpServletRequest request) {
-		
-		List <MUser> list = muserService.getAll();
+
+		List <MUser> list = muserService.listAll();
 		request.setAttribute("userlist", list);
 		return "listUser";
 	}
-	
+
 	@RequestMapping(value="/addUser")
 	public String addUser(MUser muser) {
-			
+
 		String id = UUID.randomUUID().toString();
 		muser.setId(id);
 		muserService.insert(muser);
 		return "redirect:/muserController/listUser.do";
 	}
-	
+
 	@RequestMapping(value="/deleteUser")
 	public String deleteUser(String id) {
-		
+
 		muserService.delete(id);
 		return "redirect:/muserController/listUser.do";
 	}
-	
+
 	@RequestMapping(value="/updateUserUI")
 	public String updateUserUI(String id, HttpServletRequest request) {
-		
+
 		MUser muser = muserService.selectByPrimaryKey(id);
 		request.setAttribute("user", muser);
 		return "updateUser";
@@ -61,7 +61,7 @@ public class MUserController {
 
 	@RequestMapping(value="/updateUser")
 	public String updateUser(MUser muser) {
-		
+
 		muserService.update(muser);
 		return "redirect:/muserController/listUser.do";
 	}
